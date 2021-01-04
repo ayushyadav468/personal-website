@@ -1,0 +1,872 @@
+// variables
+$basecolor: #49b7fb;
+$cardcolor: #3a3a3a;
+$backgroundColor: #121212;
+$backgroundGradient: linear-gradient(to right, #49b7fb, #4e6bf1);
+// Different sizes
+$mobileSize: 480px;
+$tabSize: 720px;
+$laptopSize: 1080px;
+$monitorSize: 1440px;
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	font-family: 'Open Sans', 'Montserrat', sans-serif;
+	background-color: $backgroundColor;
+	line-height: 1.6;
+	overflow: hidden;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+nav {
+	position: fixed;
+	top: 0%;
+	z-index: 1;
+	width: 100%;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 8vh;
+	background-color: rgba(12, 12, 12, 0.7);
+
+	.logo {
+		width: 50px;
+		height: auto;
+		margin: auto 0rem auto 5rem;
+		@media screen and (max-width: $tabSize) {
+			margin: auto;
+		}
+		img {
+			margin-top: 5px;
+		}
+	}
+	.nav-links {
+		display: flex;
+		justify-content: space-around;
+		width: 40%;
+		margin-right: 5rem;
+		@media screen and (max-width: $laptopSize) {
+			width: 60%;
+		}
+		@media screen and (max-width: $tabSize) {
+			position: absolute;
+			margin: 0;
+			right: 0px;
+			height: 92vh;
+			top: 8vh;
+			background-color: rgba(0, 0, 0, 0.7);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 50%;
+			transform: translateX(100%);
+			transition: transform 0.3s ease-in;
+		}
+
+		li {
+			list-style: none;
+			@media screen and (max-width: $tabSize) {
+				opacity: 0;
+			}
+		}
+		a {
+			color: $basecolor;
+			text-decoration: none;
+			letter-spacing: 1px;
+		}
+	}
+	.nav-active {
+		transform: translateX(0%);
+	}
+	.burger {
+		display: none;
+		@media screen and (max-width: $tabSize) {
+			display: block;
+			cursor: pointer;
+		}
+	}
+	.burger div {
+		width: 25px;
+		height: 3px;
+		background-color: $basecolor;
+		margin: 5px;
+	}
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.toggle {
+	.line1 {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+
+	.line2 {
+		opacity: 0;
+	}
+
+	.line3 {
+		transform: rotate(45deg) translate(-5px, -6px);
+	}
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	/* Scroll Snap */
+	scroll-snap-align: center;
+}
+
+.home {
+	background-size: cover;
+	color: white;
+
+	.heading {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: fill-word 2s ease forwards 2s;
+
+		path:nth-child(1) {
+			stroke-dasharray: 333.918px;
+			stroke-dashoffset: 333.918px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(2) {
+			stroke-dasharray: 303.115px;
+			stroke-dashoffset: 303.115px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(3) {
+			stroke-dasharray: 278.261px;
+			stroke-dashoffset: 278.261px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(4) {
+			stroke-dasharray: 247.48px;
+			stroke-dashoffset: 247.48px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(5) {
+			stroke-dasharray: 321.64px;
+			stroke-dashoffset: 321.64px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(6) {
+			stroke-dasharray: 257.63px;
+			stroke-dashoffset: 257.63px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(7) {
+			stroke-dasharray: 290.45px;
+			stroke-dashoffset: 290.45px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(8) {
+			stroke-dasharray: 331.4px;
+			stroke-dashoffset: 331.4px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(9) {
+			stroke-dasharray: 290.45px;
+			stroke-dashoffset: 290.45px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(10) {
+			stroke-dasharray: 241.99px;
+			stroke-dashoffset: 241.99px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(11) {
+			stroke-dasharray: 206.67px;
+			stroke-dashoffset: 206.67px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(12) {
+			stroke-dasharray: 107.57px;
+			stroke-dashoffset: 107.57px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(13) {
+			stroke-dasharray: 122.94px;
+			stroke-dashoffset: 122.94px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(14) {
+			stroke-dasharray: 131.64px;
+			stroke-dashoffset: 131.64px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(15) {
+			stroke-dasharray: 107.57px;
+			stroke-dashoffset: 107.57px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(16) {
+			stroke-dasharray: 90.75px;
+			stroke-dashoffset: 90.75px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(17) {
+			stroke-dasharray: 107.57px;
+			stroke-dashoffset: 107.57px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(18) {
+			stroke-dasharray: 65.43px;
+			stroke-dashoffset: 65.43px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(19) {
+			stroke-dasharray: 95.82px;
+			stroke-dashoffset: 95.82px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(20) {
+			stroke-dasharray: 125.12px;
+			stroke-dashoffset: 125.12px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(21) {
+			stroke-dasharray: 107.57px;
+			stroke-dashoffset: 107.57px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(22) {
+			stroke-dasharray: 66.85px;
+			stroke-dashoffset: 66.85px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(23) {
+			stroke-dasharray: 108.93px;
+			stroke-dashoffset: 108.93px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(24) {
+			stroke-dasharray: 104.35px;
+			stroke-dashoffset: 104.35px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(25) {
+			stroke-dasharray: 124.28px;
+			stroke-dashoffset: 124.28px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(26) {
+			stroke-dasharray: 131.64px;
+			stroke-dashoffset: 131.64px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(27) {
+			stroke-dasharray: 107.57px;
+			stroke-dashoffset: 107.57px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(28) {
+			stroke-dasharray: 92.8px;
+			stroke-dashoffset: 92.8px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(29) {
+			stroke-dasharray: 68.02px;
+			stroke-dashoffset: 68.02px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(30) {
+			stroke-dasharray: 157.88px;
+			stroke-dashoffset: 157.88px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(31) {
+			stroke-dasharray: 104.35px;
+			stroke-dashoffset: 104.35px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(32) {
+			stroke-dasharray: 107.57px;
+			stroke-dashoffset: 107.57px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(33) {
+			stroke-dasharray: 66.85px;
+			stroke-dashoffset: 66.85px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(34) {
+			stroke-dasharray: 1079.33px;
+			stroke-dashoffset: 1079.33px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(35) {
+			stroke-dasharray: 943.88px;
+			stroke-dashoffset: 943.88px;
+			animation: line-animation 2s ease forwards;
+		}
+		path:nth-child(36) {
+			stroke-dasharray: 1159.58px;
+			stroke-dashoffset: 1159.58px;
+			animation: line-animation 2s ease forwards;
+		}
+		@keyframes line-animation {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		@keyframes fill-word {
+			from {
+				fill: transparent;
+			}
+			to {
+				fill: #49b7fb;
+			}
+		}
+		@media screen and (max-width: $mobileSize) {
+			width: 100%;
+		}
+		@media screen and (max-width: $tabSize) and (min-width: $mobileSize) {
+			width: 95%;
+		}
+		@media screen and (max-width: $laptopSize) and (min-width: $tabSize) {
+			width: 90%;
+		}
+	}
+
+	.contact-link {
+		width: 50%;
+		height: 50px;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		img {
+			width: 60px;
+			height: 60px;
+		}
+		@media screen and (max-width: $mobileSize) {
+			width: 80%;
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		@media screen and (max-width: $tabSize) and (min-width: $mobileSize) {
+			width: 65%;
+			img {
+				width: 45px;
+				height: 45px;
+			}
+		}
+		@media screen and (max-width: $laptopSize) and (min-width: $tabSize) {
+			width: 60%;
+		}
+	}
+}
+
+.about-me {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	background-color: $backgroundColor;
+	justify-items: center;
+	h1 {
+		color: $basecolor;
+		margin-top: 10vh;
+		font-weight: bold;
+		font-size: 3.4rem;
+		text-transform: uppercase;
+	}
+	.aboutme-card-container {
+		margin: 2vh auto;
+		height: 60%;
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.aboutme-card {
+			background-color: $cardcolor;
+			width: 49%;
+			height: 100%;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			border-radius: 7px;
+			align-content: center;
+			.aboutme-card-logo {
+				margin: 0.6rem auto 0.2rem auto;
+				width: 30%;
+			}
+			h3 {
+				margin: 1rem 0;
+				font-weight: bold;
+				font-size: 2.5rem;
+				letter-spacing: 1px;
+				color: $basecolor;
+			}
+			h4 {
+				margin: 1rem 0;
+				font-weight: lighter;
+				font-size: 1.8rem;
+				letter-spacing: 0.5px;
+				color: $basecolor;
+			}
+			p {
+				font-weight: lighter;
+				font-size: 1.1rem;
+			}
+		}
+	}
+	@media screen and (max-width: $mobileSize) {
+		h1 {
+			font-size: 2rem;
+		}
+		.aboutme-card-container {
+			display: contents;
+			.aboutme-card {
+				width: 90%;
+				margin: 1rem auto;
+				.aboutme-card-logo {
+					display: none;
+				}
+				h3 {
+					font-size: 1.6rem;
+				}
+				h4 {
+					font-size: 1.3rem;
+				}
+				p {
+					font-size: 1rem;
+				}
+				.tools-front,
+				.tools-back {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-evenly;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $tabSize) and (min-width: $mobileSize) {
+		.aboutme-card-container {
+			width: 80%;
+			height: 70%;
+			justify-content: space-around;
+			.aboutme-card {
+				width: 45%;
+				.aboutme-card-logo {
+					width: 20%;
+				}
+				h3 {
+					font-size: 1.6rem;
+				}
+				h4 {
+					font-size: 1.3rem;
+				}
+
+				p {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $laptopSize) and (min-width: $tabSize) {
+		.aboutme-card-container {
+			width: 60%;
+			height: 67%;
+			justify-content: space-around;
+			.aboutme-card {
+				width: 45%;
+				.aboutme-card-logo {
+					width: 25%;
+				}
+				h3 {
+					font-size: 1.8rem;
+				}
+				h4 {
+					font-size: 1.4rem;
+				}
+				p {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+.projects {
+	color: $basecolor;
+	display: flex;
+	flex-direction: column;
+	background-color: $backgroundColor;
+	justify-items: center;
+
+	h1 {
+		margin-top: 10vh;
+		font-weight: bold;
+		font-size: 3.4rem;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+
+	.project-card-container {
+		margin-top: 5vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		.project-card-sub-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+			.card {
+				width: 90%;
+				margin: 0 auto 2vh auto;
+				border-radius: 7px;
+				display: flex;
+				flex-direction: row;
+
+				.orientLeft {
+					order: 1;
+				}
+				.orientRight {
+					order: 2;
+				}
+
+				.card__side--front {
+					width: 40%;
+					.card__cont,
+					img {
+						border-radius: 7px 0 0 7px;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				.card__side--back {
+					background-color: $cardcolor;
+					width: 60%;
+					.card__cta {
+						padding: 0.5rem;
+						h3 {
+							font-size: 1.2rem;
+						}
+						p {
+							font-size: 0.5rem;
+						}
+						.btn-div {
+							padding-top: 1vh;
+							display: flex;
+							flex-direction: row;
+							justify-content: space-evenly;
+							button {
+								padding: 0.2rem 0.5rem;
+								outline: none;
+								background-color: $cardcolor;
+								border: $basecolor 1px solid;
+								border-radius: 7px;
+								color: $basecolor;
+								font-size: 0.6rem;
+								font-weight: bold;
+							}
+							button:focus,
+							button:active,
+							button:hover {
+								background-color: $basecolor;
+								color: white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $tabSize) and (min-width: 600px) {
+		.project-card-container {
+			height: 60%;
+			.project-card-sub-container {
+				height: 60%;
+				flex-direction: row;
+				.card {
+					width: 45%;
+					.card__side--back {
+						.card__cta {
+							margin: 3vh auto;
+							h3 {
+								font-size: 1.4rem;
+							}
+							p {
+								font-size: 0.7rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $laptopSize) and (min-width: $tabSize) {
+		.project-card-container {
+			height: 70%;
+			.project-card-sub-container {
+				flex-direction: row;
+				justify-content: space-between;
+				.card {
+					width: 45%;
+					.card__side--back {
+						.card__cta {
+							margin: 3vh auto;
+							h3 {
+								font-size: 1.6rem;
+							}
+							p {
+								font-size: 0.8rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: $laptopSize) {
+		.project-card-container {
+			margin-top: 5vh;
+			height: 70%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.project-card-sub-container {
+				width: 90%;
+				height: 40%;
+				margin: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+
+				.card {
+					perspective: 200rem;
+					width: 47%;
+					border-radius: 7px;
+					position: relative;
+
+					.card__side {
+						width: 100%;
+						height: 100%;
+						transition: all 0.8s ease;
+						position: absolute;
+						top: 0;
+						left: 0;
+						margin: auto;
+						backface-visibility: hidden;
+						border-radius: 7px;
+						overflow: hidden;
+						box-shadow: 0 1.5rem 4rem rgba($backgroundColor, 0.4);
+					}
+
+					.card__side--front {
+						background-color: $cardcolor;
+						width: 100%;
+						height: 100%;
+						.card__cont img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
+
+					.card__side--back {
+						transform: rotateY(180deg);
+						background-color: $cardcolor;
+						.card__cta {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							width: 90%;
+							color: white;
+
+							h3 {
+								font-size: 2rem;
+								text-transform: uppercase;
+								color: $basecolor;
+								font-family: 'Open Sans';
+								margin: 0 0 1vh 0;
+							}
+							p {
+								margin: 0 0 2vh 0;
+								font-family: 'Montserrat';
+							}
+							.btn-div {
+								display: flex;
+								justify-content: space-around;
+								button {
+									color: $basecolor !important;
+									background-color: $cardcolor;
+									text-transform: uppercase;
+									text-decoration: none;
+									font-size: 1.4rem;
+									background: $cardcolor;
+									padding: 5px 15px;
+									outline: none;
+									border: 2px solid $basecolor !important;
+									border-radius: 7px;
+									display: inline-block;
+									transition: all 0.4s ease 0s;
+									&:hover {
+										color: #ffffff !important;
+										background: $basecolor;
+										border-color: $basecolor !important;
+										transition: all 0.4s ease 0s;
+									}
+								}
+							}
+						}
+					}
+				}
+				.card:hover .card__side--front {
+					transform: rotateY(-180deg);
+				}
+				.card:hover .card__side--back {
+					transform: rotateY(0deg);
+				}
+			}
+		}
+	}
+}
+
+.contact {
+	background: $backgroundColor;
+	color: $basecolor;
+	h1 {
+		padding-top: 10vh;
+		margin-bottom: 1rem;
+		font-weight: bold;
+		font-size: 64px;
+		font-family: 'Open Sans';
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+	.contact-card-container {
+		width: 75%;
+		height: 70%;
+		margin: auto;
+		background-color: $cardcolor;
+		display: flex;
+		flex-direction: row;
+		border-radius: 7px;
+		box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.7);
+		.form-container {
+			width: 70%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			form {
+				width: 90%;
+				height: 80%;
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				input,
+				textarea {
+					font-size: 16px;
+					font-family: 'Open Sans';
+					color: white;
+					padding: 7px;
+					background-color: $cardcolor;
+					border: 3px solid #ffffff;
+					border-radius: 7px;
+					outline: none;
+				}
+				.name-email-cont {
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					input[type='text'] {
+						width: 35%;
+					}
+					input[type='email'] {
+						width: 50%;
+					}
+				}
+				#subject {
+					width: 100%;
+				}
+				#message {
+					width: 100%;
+					height: 45%;
+					resize: none;
+				}
+				#submitBtn {
+					width: 25%;
+					margin-left: 75%;
+					font-size: 1.2rem;
+					color: $basecolor;
+					border-color: $basecolor;
+					&:hover,
+					&:active {
+						color: white;
+						background-color: $basecolor;
+					}
+				}
+			}
+		}
+		.contact-link {
+			width: 30%;
+			// height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			img {
+				width: 60px;
+				height: 60px;
+				margin: 0 auto 2rem auto;
+			}
+		}
+	}
+	// @media screen and (max-width: $mobileSize) {
+
+	// }
+	@media screen and (max-width: $tabSize) and (min-width: $mobileSize) {
+		.contact-card-container {
+			width: 95%;
+		}
+	}
+	// @media screen and (max-width: $laptopSize) and (min-width: $tabSize) {
+
+	// }
+}
