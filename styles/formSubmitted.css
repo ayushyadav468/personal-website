@@ -31,6 +31,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.submitted .failed {
+  display: none;
+}
+
 .submitted h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -44,11 +48,9 @@ a {
   letter-spacing: 0.5px;
 }
 
-.submitted .failed {
-  display: none;
-}
-
 .submitted .back {
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #49b7fb;
 }
 /*# sourceMappingURL=formSubmitted.css.map */
