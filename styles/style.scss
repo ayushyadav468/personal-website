@@ -404,7 +404,7 @@ main {
 	}
 	.aboutme-card-container {
 		margin: 2vh auto;
-		height: 60%;
+		height: 75%;
 		width: 50%;
 		display: flex;
 		flex-direction: row;
@@ -421,19 +421,24 @@ main {
 			align-content: center;
 			.aboutme-card-logo {
 				margin: 0.6rem auto 0.2rem auto;
-				width: 30%;
+				max-height: 80px;
+				height: 30%;
+				img {
+					min-width: 80px;
+					width: auto;
+				}
 			}
 			h3 {
 				margin: 1rem 0;
 				font-weight: bold;
-				font-size: 2.5rem;
+				font-size: 2.3rem;
 				letter-spacing: 1px;
 				color: $basecolor;
 			}
 			h4 {
 				margin: 1rem 0;
 				font-weight: lighter;
-				font-size: 1.8rem;
+				font-size: 1.6rem;
 				letter-spacing: 0.5px;
 				color: $basecolor;
 			}
@@ -725,6 +730,7 @@ main {
 							}
 							p {
 								margin: 0 0 2vh 0;
+								font-size: 0.8rem;
 								font-family: 'Montserrat';
 							}
 							.btn-div {
@@ -735,7 +741,7 @@ main {
 									background-color: $cardcolor;
 									text-transform: uppercase;
 									text-decoration: none;
-									font-size: 1.4rem;
+									font-size: 1.2rem;
 									background: $cardcolor;
 									padding: 5px 15px;
 									outline: none;
