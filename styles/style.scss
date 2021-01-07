@@ -778,7 +778,7 @@ main {
 		padding-top: 10vh;
 		margin-bottom: 1rem;
 		font-weight: bold;
-		font-size: 64px;
+		font-size: 3.4rem;
 		font-family: 'Open Sans';
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
@@ -853,7 +853,6 @@ main {
 		}
 		.contact-link {
 			width: 30%;
-			// height: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -864,15 +863,32 @@ main {
 			}
 		}
 	}
-	// @media screen and (max-width: $mobileSize) {
-
-	// }
+	@media screen and (max-width: $mobileSize) {
+		.contact-card-container {
+			width: 100%;
+			flex-direction: column;
+			justify-content: space-around;
+			.form-container {
+				width: 100%;
+				form {
+					width: 95%;
+					justify-content: space-between;
+					#submitBtn {
+						width: 100%;
+						margin-left: 0%;
+					}
+				}
+			}
+			.contact-link {
+				width: 100%;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+		}
+	}
 	@media screen and (max-width: $tabSize) and (min-width: $mobileSize) {
 		.contact-card-container {
 			width: 95%;
 		}
 	}
-	// @media screen and (max-width: $laptopSize) and (min-width: $tabSize) {
-
-	// }
 }

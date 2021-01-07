@@ -1050,7 +1050,7 @@ main {
   padding-top: 10vh;
   margin-bottom: 1rem;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 3.4rem;
   font-family: 'Open Sans';
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1182,6 +1182,40 @@ main {
   width: 60px;
   height: 60px;
   margin: 0 auto 2rem auto;
+}
+
+@media screen and (max-width: 480px) {
+  .contact .contact-card-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact .contact-card-container .form-container {
+    width: 100%;
+  }
+  .contact .contact-card-container .form-container form {
+    width: 95%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact .contact-card-container .form-container form #submitBtn {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .contact .contact-card-container .contact-link {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 720px) and (min-width: 480px) {
