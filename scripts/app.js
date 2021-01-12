@@ -37,12 +37,12 @@ const app = () => {
 
 		const success = () => {
 			form.reset();
-			console.log(window.location.pathname + '/formSubmitted.html');
-			// window.location.pathname = '/formSubmitted.html';
-			// document.querySelector('.failed').style.display = 'none';
+			window.location.pathname + 'formSubmitted.html';
+			document.querySelector('.failed').style.display = 'none';
 		};
 		const error = () => {
-			window.location.pathname = '/formSubmitted.html';
+			window.location.pathname =
+				window.location.pathname + 'formSubmitted.html';
 			document.querySelector('.sucess').style.display = 'none';
 			document.querySelector('.failed').style.display = 'block';
 		};
