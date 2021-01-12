@@ -37,7 +37,8 @@ const app = () => {
 
 		const success = () => {
 			form.reset();
-			window.location.pathname + 'formSubmitted.html';
+			window.location.pathname =
+				window.location.pathname + 'formSubmitted.html';
 			document.querySelector('.failed').style.display = 'none';
 		};
 		const error = () => {
