@@ -16,6 +16,10 @@ body {
       scroll-snap-type: y mandatory;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   position: fixed;
   top: 0%;
@@ -190,7 +194,7 @@ main {
   color: white;
 }
 
-.home .heading {
+.home .svg-heading {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 2;
@@ -205,252 +209,252 @@ main {
           animation: fill-word 2s ease forwards 2s;
 }
 
-.home .heading path:nth-child(1) {
+.home .svg-heading path:nth-child(1) {
   stroke-dasharray: 333.918px;
   stroke-dashoffset: 333.918px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(2) {
+.home .svg-heading path:nth-child(2) {
   stroke-dasharray: 303.115px;
   stroke-dashoffset: 303.115px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(3) {
+.home .svg-heading path:nth-child(3) {
   stroke-dasharray: 278.261px;
   stroke-dashoffset: 278.261px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(4) {
+.home .svg-heading path:nth-child(4) {
   stroke-dasharray: 247.48px;
   stroke-dashoffset: 247.48px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(5) {
+.home .svg-heading path:nth-child(5) {
   stroke-dasharray: 321.64px;
   stroke-dashoffset: 321.64px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(6) {
+.home .svg-heading path:nth-child(6) {
   stroke-dasharray: 257.63px;
   stroke-dashoffset: 257.63px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(7) {
+.home .svg-heading path:nth-child(7) {
   stroke-dasharray: 290.45px;
   stroke-dashoffset: 290.45px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(8) {
+.home .svg-heading path:nth-child(8) {
   stroke-dasharray: 331.4px;
   stroke-dashoffset: 331.4px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(9) {
+.home .svg-heading path:nth-child(9) {
   stroke-dasharray: 290.45px;
   stroke-dashoffset: 290.45px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(10) {
+.home .svg-heading path:nth-child(10) {
   stroke-dasharray: 241.99px;
   stroke-dashoffset: 241.99px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(11) {
+.home .svg-heading path:nth-child(11) {
   stroke-dasharray: 206.67px;
   stroke-dashoffset: 206.67px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(12) {
+.home .svg-heading path:nth-child(12) {
   stroke-dasharray: 107.57px;
   stroke-dashoffset: 107.57px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(13) {
+.home .svg-heading path:nth-child(13) {
   stroke-dasharray: 122.94px;
   stroke-dashoffset: 122.94px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(14) {
+.home .svg-heading path:nth-child(14) {
   stroke-dasharray: 131.64px;
   stroke-dashoffset: 131.64px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(15) {
+.home .svg-heading path:nth-child(15) {
   stroke-dasharray: 107.57px;
   stroke-dashoffset: 107.57px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(16) {
+.home .svg-heading path:nth-child(16) {
   stroke-dasharray: 90.75px;
   stroke-dashoffset: 90.75px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(17) {
+.home .svg-heading path:nth-child(17) {
   stroke-dasharray: 107.57px;
   stroke-dashoffset: 107.57px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(18) {
+.home .svg-heading path:nth-child(18) {
   stroke-dasharray: 65.43px;
   stroke-dashoffset: 65.43px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(19) {
+.home .svg-heading path:nth-child(19) {
   stroke-dasharray: 95.82px;
   stroke-dashoffset: 95.82px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(20) {
+.home .svg-heading path:nth-child(20) {
   stroke-dasharray: 125.12px;
   stroke-dashoffset: 125.12px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(21) {
+.home .svg-heading path:nth-child(21) {
   stroke-dasharray: 107.57px;
   stroke-dashoffset: 107.57px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(22) {
+.home .svg-heading path:nth-child(22) {
   stroke-dasharray: 66.85px;
   stroke-dashoffset: 66.85px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(23) {
+.home .svg-heading path:nth-child(23) {
   stroke-dasharray: 108.93px;
   stroke-dashoffset: 108.93px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(24) {
+.home .svg-heading path:nth-child(24) {
   stroke-dasharray: 104.35px;
   stroke-dashoffset: 104.35px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(25) {
+.home .svg-heading path:nth-child(25) {
   stroke-dasharray: 124.28px;
   stroke-dashoffset: 124.28px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(26) {
+.home .svg-heading path:nth-child(26) {
   stroke-dasharray: 131.64px;
   stroke-dashoffset: 131.64px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(27) {
+.home .svg-heading path:nth-child(27) {
   stroke-dasharray: 107.57px;
   stroke-dashoffset: 107.57px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(28) {
+.home .svg-heading path:nth-child(28) {
   stroke-dasharray: 92.8px;
   stroke-dashoffset: 92.8px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(29) {
+.home .svg-heading path:nth-child(29) {
   stroke-dasharray: 68.02px;
   stroke-dashoffset: 68.02px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(30) {
+.home .svg-heading path:nth-child(30) {
   stroke-dasharray: 157.88px;
   stroke-dashoffset: 157.88px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(31) {
+.home .svg-heading path:nth-child(31) {
   stroke-dasharray: 104.35px;
   stroke-dashoffset: 104.35px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(32) {
+.home .svg-heading path:nth-child(32) {
   stroke-dasharray: 107.57px;
   stroke-dashoffset: 107.57px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(33) {
+.home .svg-heading path:nth-child(33) {
   stroke-dasharray: 66.85px;
   stroke-dashoffset: 66.85px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(34) {
+.home .svg-heading path:nth-child(34) {
   stroke-dasharray: 1079.33px;
   stroke-dashoffset: 1079.33px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(35) {
+.home .svg-heading path:nth-child(35) {
   stroke-dasharray: 943.88px;
   stroke-dashoffset: 943.88px;
   -webkit-animation: line-animation 2s ease forwards;
           animation: line-animation 2s ease forwards;
 }
 
-.home .heading path:nth-child(36) {
+.home .svg-heading path:nth-child(36) {
   stroke-dasharray: 1159.58px;
   stroke-dashoffset: 1159.58px;
   -webkit-animation: line-animation 2s ease forwards;
@@ -488,19 +492,19 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-  .home .heading {
+  .home .svg-heading {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 720px) and (min-width: 480px) {
-  .home .heading {
+  .home .svg-heading {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 1080px) and (min-width: 720px) {
-  .home .heading {
+  .home .svg-heading {
     width: 90%;
   }
 }
@@ -568,7 +572,7 @@ main {
   justify-items: center;
 }
 
-.about-me h1 {
+.about-me .section-heading {
   color: #49b7fb;
   margin-top: 10vh;
   font-weight: bold;
@@ -643,7 +647,7 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-  .about-me h1 {
+  .about-me .section-heading {
     font-size: 2rem;
   }
   .about-me .aboutme-card-container {
@@ -741,10 +745,10 @@ main {
   justify-items: center;
 }
 
-.projects h1 {
+.projects .section-heading {
   margin-top: 10vh;
   font-weight: bold;
-  font-size: 3.4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
@@ -793,19 +797,26 @@ main {
           order: 1;
 }
 
+.projects .project-card-container .project-card-sub-container .card .orientLeft img {
+  border-radius: 7px 0 0 7px;
+}
+
 .projects .project-card-container .project-card-sub-container .card .orientRight {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
+.projects .project-card-container .project-card-sub-container .card .orientRight img {
+  border-radius: 0 7px 7px 0;
+}
+
 .projects .project-card-container .project-card-sub-container .card .card__side--front {
-  width: 40%;
+  width: 50%;
 }
 
 .projects .project-card-container .project-card-sub-container .card .card__side--front .card__cont,
 .projects .project-card-container .project-card-sub-container .card .card__side--front img {
-  border-radius: 7px 0 0 7px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -814,7 +825,7 @@ main {
 
 .projects .project-card-container .project-card-sub-container .card .card__side--back {
   background-color: #3a3a3a;
-  width: 60%;
+  width: 50%;
 }
 
 .projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta {
@@ -843,8 +854,8 @@ main {
           justify-content: space-evenly;
 }
 
-.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div button {
-  padding: 0.2rem 0.5rem;
+.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div .btn {
+  padding: 0.1rem 0.5rem;
   outline: none;
   background-color: #3a3a3a;
   border: #49b7fb 1px solid;
@@ -854,14 +865,17 @@ main {
   font-weight: bold;
 }
 
-.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div button:focus,
-.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div button:active,
-.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div button:hover {
+.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div .btn:focus,
+.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div .btn:active,
+.projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div .btn:hover {
   background-color: #49b7fb;
   color: white;
 }
 
 @media screen and (max-width: 720px) and (min-width: 600px) {
+  .projects .section-heading {
+    font-size: 2.4rem;
+  }
   .projects .project-card-container {
     height: 60%;
   }
@@ -887,6 +901,9 @@ main {
 }
 
 @media screen and (max-width: 1080px) and (min-width: 720px) {
+  .projects .section-heading {
+    font-size: 3.4rem;
+  }
   .projects .project-card-container {
     height: 70%;
   }
@@ -914,6 +931,9 @@ main {
 }
 
 @media screen and (min-width: 1080px) {
+  .projects .section-heading {
+    font-size: 3.4rem;
+  }
   .projects .project-card-container {
     margin-top: 5vh;
     height: 70%;
@@ -951,6 +971,7 @@ main {
   }
   .projects .project-card-container .project-card-sub-container .card .card__side {
     width: 100%;
+    max-width: 500px;
     height: 100%;
     -webkit-transition: all 0.8s ease;
     transition: all 0.8s ease;
@@ -968,6 +989,7 @@ main {
   .projects .project-card-container .project-card-sub-container .card .card__side--front {
     background-color: #3a3a3a;
     width: 100%;
+    max-width: 500px;
     height: 100%;
   }
   .projects .project-card-container .project-card-sub-container .card .card__side--front .card__cont img {
@@ -1009,14 +1031,14 @@ main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div button {
+  .projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div .btn {
     color: #49b7fb !important;
     background-color: #3a3a3a;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.2rem;
     background: #3a3a3a;
-    padding: 5px 15px;
+    padding: 0.1rem 0.8rem;
     outline: none;
     border: 2px solid #49b7fb !important;
     border-radius: 7px;
@@ -1024,7 +1046,7 @@ main {
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
   }
-  .projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div button:hover {
+  .projects .project-card-container .project-card-sub-container .card .card__side--back .card__cta .btn-div .btn:hover {
     color: #ffffff !important;
     background: #49b7fb;
     border-color: #49b7fb !important;
@@ -1042,18 +1064,24 @@ main {
 }
 
 .contact {
-  background: #121212;
-  color: #49b7fb;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #121212;
+  justify-items: center;
 }
 
-.contact h1 {
-  padding-top: 10vh;
-  margin-bottom: 1rem;
+.contact .section-heading {
+  color: #49b7fb;
+  margin-top: 10vh;
   font-weight: bold;
   font-size: 3.4rem;
-  font-family: 'Open Sans';
   text-transform: uppercase;
-  letter-spacing: 1.5px;
 }
 
 .contact .contact-card-container {
@@ -1185,6 +1213,9 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+  .contact .section-heading {
+    font-size: 2rem;
+  }
   .contact .contact-card-container {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -1216,9 +1247,16 @@ main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .contact .contact-card-container .contact-link img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 720px) and (min-width: 480px) {
+  .contact .section-heading {
+    margin-top: 20vh;
+  }
   .contact .contact-card-container {
     width: 95%;
   }

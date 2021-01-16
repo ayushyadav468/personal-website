@@ -25,6 +25,10 @@ body {
 	scroll-snap-type: y mandatory;
 }
 
+a {
+	text-decoration: none;
+}
+
 nav {
 	position: fixed;
 	top: 0%;
@@ -141,7 +145,7 @@ main {
 	background-size: cover;
 	color: white;
 
-	.heading {
+	.svg-heading {
 		grid-column-start: 2;
 		grid-row-start: 2;
 		width: 80%;
@@ -395,7 +399,7 @@ main {
 	flex-direction: column;
 	background-color: $backgroundColor;
 	justify-items: center;
-	h1 {
+	.section-heading {
 		color: $basecolor;
 		margin-top: 10vh;
 		font-weight: bold;
@@ -449,7 +453,7 @@ main {
 		}
 	}
 	@media screen and (max-width: $mobileSize) {
-		h1 {
+		.section-heading {
 			font-size: 2rem;
 		}
 		.aboutme-card-container {
@@ -532,10 +536,10 @@ main {
 	background-color: $backgroundColor;
 	justify-items: center;
 
-	h1 {
+	.section-heading {
 		margin-top: 10vh;
 		font-weight: bold;
-		font-size: 3.4rem;
+		font-size: 2rem;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 	}
@@ -559,17 +563,22 @@ main {
 				flex-direction: row;
 
 				.orientLeft {
+					img {
+						border-radius: 7px 0 0 7px;
+					}
 					order: 1;
 				}
 				.orientRight {
+					img {
+						border-radius: 0 7px 7px 0;
+					}
 					order: 2;
 				}
 
 				.card__side--front {
-					width: 40%;
+					width: 50%;
 					.card__cont,
 					img {
-						border-radius: 7px 0 0 7px;
 						width: 100%;
 						height: 100%;
 						object-fit: cover;
@@ -578,7 +587,7 @@ main {
 
 				.card__side--back {
 					background-color: $cardcolor;
-					width: 60%;
+					width: 50%;
 					.card__cta {
 						padding: 0.5rem;
 						h3 {
@@ -592,8 +601,8 @@ main {
 							display: flex;
 							flex-direction: row;
 							justify-content: space-evenly;
-							button {
-								padding: 0.2rem 0.5rem;
+							.btn {
+								padding: 0.1rem 0.5rem;
 								outline: none;
 								background-color: $cardcolor;
 								border: $basecolor 1px solid;
@@ -602,9 +611,9 @@ main {
 								font-size: 0.6rem;
 								font-weight: bold;
 							}
-							button:focus,
-							button:active,
-							button:hover {
+							.btn:focus,
+							.btn:active,
+							.btn:hover {
 								background-color: $basecolor;
 								color: white;
 							}
@@ -616,6 +625,9 @@ main {
 	}
 
 	@media screen and (max-width: $tabSize) and (min-width: 600px) {
+		.section-heading {
+			font-size: 2.4rem;
+		}
 		.project-card-container {
 			height: 60%;
 			.project-card-sub-container {
@@ -640,6 +652,9 @@ main {
 	}
 
 	@media screen and (max-width: $laptopSize) and (min-width: $tabSize) {
+		.section-heading {
+			font-size: 3.4rem;
+		}
 		.project-card-container {
 			height: 70%;
 			.project-card-sub-container {
@@ -664,6 +679,9 @@ main {
 	}
 
 	@media screen and (min-width: $laptopSize) {
+		.section-heading {
+			font-size: 3.4rem;
+		}
 		.project-card-container {
 			margin-top: 5vh;
 			height: 70%;
@@ -687,6 +705,7 @@ main {
 
 					.card__side {
 						width: 100%;
+						max-width: 500px;
 						height: 100%;
 						transition: all 0.8s ease;
 						position: absolute;
@@ -702,6 +721,7 @@ main {
 					.card__side--front {
 						background-color: $cardcolor;
 						width: 100%;
+						max-width: 500px;
 						height: 100%;
 						.card__cont img {
 							width: 100%;
@@ -736,14 +756,14 @@ main {
 							.btn-div {
 								display: flex;
 								justify-content: space-around;
-								button {
+								.btn {
 									color: $basecolor !important;
 									background-color: $cardcolor;
 									text-transform: uppercase;
 									text-decoration: none;
 									font-size: 1.2rem;
 									background: $cardcolor;
-									padding: 5px 15px;
+									padding: 0.1rem 0.8rem;
 									outline: none;
 									border: 2px solid $basecolor !important;
 									border-radius: 7px;
@@ -772,16 +792,17 @@ main {
 }
 
 .contact {
-	background: $backgroundColor;
-	color: $basecolor;
-	h1 {
-		padding-top: 10vh;
-		margin-bottom: 1rem;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	background-color: $backgroundColor;
+	justify-items: center;
+	.section-heading {
+		color: $basecolor;
+		margin-top: 10vh;
 		font-weight: bold;
 		font-size: 3.4rem;
-		font-family: 'Open Sans';
 		text-transform: uppercase;
-		letter-spacing: 1.5px;
 	}
 	.contact-card-container {
 		width: 75%;
@@ -864,6 +885,9 @@ main {
 		}
 	}
 	@media screen and (max-width: $mobileSize) {
+		.section-heading {
+			font-size: 2rem;
+		}
 		.contact-card-container {
 			width: 100%;
 			flex-direction: column;
@@ -883,10 +907,17 @@ main {
 				width: 100%;
 				flex-direction: row;
 				justify-content: space-around;
+				img {
+					width: 30px;
+					height: 30px;
+				}
 			}
 		}
 	}
 	@media screen and (max-width: $tabSize) and (min-width: $mobileSize) {
+		.section-heading {
+			margin-top: 20vh;
+		}
 		.contact-card-container {
 			width: 95%;
 		}
