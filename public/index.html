@@ -16,7 +16,10 @@
 		<title>Ayush Yadav</title>
 	</head>
 	<body class="font-playFair">
-		<section id="main-page" class="block h-screen w-screen bg-dark text-light">
+		<section
+			id="main-page"
+			class="block h-screen w-screen bg-dark text-light overflow-hidden"
+		>
 			<div class="w-10 fixed top-2 right-3 md:hidden lg:hidden xl:hidden">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +35,7 @@
 					/>
 				</svg>
 			</div>
-			<div class="w-9/12 h-full m-auto pt-28 text-5xl leading-normal">
+			<div class="w-9/12 h-full m-auto pt-36 text-5xl leading-normal">
 				<h2>Hi,</h2>
 				<h2>I am</h2>
 				<h2 class="text-yellow text-4xl">
@@ -51,20 +54,102 @@
 			</div>
 		</section>
 		<section id="project-page" class="block bg-light text-gray">
-			<h2>Projects</h2>
-			<div>
-				<img
-					src="../src/img/colors-640w.jpg"
-					alt="colors"
-					sizes="(min-width:769px) 1280px, 640px"
-					srcset="
-						../src/img/colors-1280w.jpg 1280w,
-						../src/img/colors-640w.jpg   640w
-					"
-				/>
-				<h4>TODO App</h4>
-				<p>Dynamically create TODOs for better productivity</p>
-				<a href="#">Code</a>
+			<h2 class="mt-6 mb-4 ml-4 text-5xl text-red">Projects</h2>
+			<div class="project-card">
+				<div class="relative right-12">
+					<img
+						class="rounded-full"
+						src="../src/img/colors-640w.jpg"
+						alt="colors"
+						sizes="(min-width:769px) 1280px, 640px"
+						srcset="
+							../src/img/colors-1280w.jpg 1280w,
+							../src/img/colors-640w.jpg   640w
+						"
+						style="width: 120px; height: 120px"
+					/>
+				</div>
+				<div class="relative right-5 py-2">
+					<h4 class="text-lg">TODO App</h4>
+					<p class="text-sm my-3 italic">Dynamically create TODOs</p>
+					<a
+						href="#"
+						class="px-4 py-0.1 text-lg border-2 border-gray rounded-3xl text-yellow"
+						>Code</a
+					>
+				</div>
+			</div>
+			<div class="w-3/4 h-1/6 my-6 mr-auto flex items-center bg-dark">
+				<div class="order-2">
+					<img
+						class="relative left-12 rounded-full"
+						src="../src/img/colors-640w.jpg"
+						alt="colors"
+						sizes="(min-width:769px) 1280px, 640px"
+						srcset="
+							../src/img/colors-1280w.jpg 1280w,
+							../src/img/colors-640w.jpg   640w
+						"
+						style="width: 120px; height: 120px"
+					/>
+				</div>
+				<div class="relative left-5 order-1 py-2 text-right">
+					<h4 class="text-lg">TODO App</h4>
+					<p class="text-sm my-3 italic">Dynamically create TODOs</p>
+					<a
+						href="#"
+						class="px-4 py-0.1 text-lg border-2 border-gray rounded-3xl text-yellow"
+						>Code</a
+					>
+				</div>
+			</div>
+			<div class="project-card">
+				<div class="relative right-12">
+					<img
+						class="rounded-full"
+						src="../src/img/colors-640w.jpg"
+						alt="colors"
+						sizes="(min-width:769px) 1280px, 640px"
+						srcset="
+							../src/img/colors-1280w.jpg 1280w,
+							../src/img/colors-640w.jpg   640w
+						"
+						style="width: 120px; height: 120px"
+					/>
+				</div>
+				<div class="relative right-5 py-2">
+					<h4 class="text-lg">TODO App</h4>
+					<p class="text-sm my-3 italic">Dynamically create TODOs</p>
+					<a
+						href="#"
+						class="px-4 py-0.1 text-lg border-2 border-gray rounded-3xl text-yellow"
+						>Code</a
+					>
+				</div>
+			</div>
+			<div class="w-3/4 h-1/6 my-6 mr-auto flex items-center bg-dark">
+				<div class="order-2">
+					<img
+						class="relative left-12 rounded-full"
+						src="../src/img/colors-640w.jpg"
+						alt="colors"
+						sizes="(min-width:769px) 1280px, 640px"
+						srcset="
+							../src/img/colors-1280w.jpg 1280w,
+							../src/img/colors-640w.jpg   640w
+						"
+						style="width: 120px; height: 120px"
+					/>
+				</div>
+				<div class="relative left-5 order-1 py-2 text-right">
+					<h4 class="text-lg">TODO App</h4>
+					<p class="text-sm my-3 italic">Dynamically create TODOs</p>
+					<a
+						href="#"
+						class="px-4 py-0.1 text-lg border-2 border-gray rounded-3xl text-yellow"
+						>Code</a
+					>
+				</div>
 			</div>
 		</section>
 	</body>

@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.project-card {
+	@apply w-3/4 h-1/6 my-6 ml-auto flex items-center bg-dark;
+}

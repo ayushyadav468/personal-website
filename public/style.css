@@ -17273,6 +17273,18 @@ video {
           animation: bounce 1s infinite;
 }
 
+.project-card {
+  --tw-bg-opacity: 1;
+  background-color: rgba(33, 23, 34, var(--tw-bg-opacity));
+  display: flex;
+  align-items: center;
+  height: 16.666667%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  width: 75%;
+}
+
 @media (max-width: 480px) {
   .sm\:container {
     width: 100%;
