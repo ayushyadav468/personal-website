@@ -16,11 +16,8 @@
 		<title>Ayush Yadav</title>
 	</head>
 	<body class="font-playFair">
-		<section
-			id="main-page"
-			class="h-screen w-screen my-0 mx-0 bg-dark text-light"
-		>
-			<div class="w-10 fixed -top-0 -right-0 md:hidden lg:hidden xl:hidden">
+		<section id="main-page" class="block h-screen w-screen bg-dark text-light">
+			<div class="w-10 fixed top-2 right-3 md:hidden lg:hidden xl:hidden">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -35,7 +32,7 @@
 					/>
 				</svg>
 			</div>
-			<div class="py-40 px-16 text-3xl leading-normal">
+			<div class="w-9/12 h-full m-auto pt-28 text-5xl leading-normal">
 				<h2>Hi,</h2>
 				<h2>I am</h2>
 				<h2 class="text-yellow text-4xl">
@@ -45,8 +42,29 @@
 						<code>/></code>
 					</em>
 				</h2>
-				<h2 class="text-xl">Web Developer and Designer</h2>
-				<a href="#" class="text-xl">Contact Me</a>
+				<h2 class="text-lg mt-4 mb-2">Web Developer and Designer</h2>
+				<a
+					href="#"
+					class="px-5 py-0.1 text-2xl text-yellow border-2 border-red rounded-3xl"
+					>Contact Me</a
+				>
+			</div>
+		</section>
+		<section id="project-page" class="block bg-light text-gray">
+			<h2>Projects</h2>
+			<div>
+				<img
+					src="../src/img/colors-640w.jpg"
+					alt="colors"
+					sizes="(min-width:769px) 1280px, 640px"
+					srcset="
+						../src/img/colors-1280w.jpg 1280w,
+						../src/img/colors-640w.jpg   640w
+					"
+				/>
+				<h4>TODO App</h4>
+				<p>Dynamically create TODOs for better productivity</p>
+				<a href="#">Code</a>
 			</div>
 		</section>
 	</body>
