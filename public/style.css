@@ -54,7 +54,7 @@ section {
 	margin-top: 0.6rem;
 }
 
-.home-page .content .contact-link {
+.home-page .content .contact-btn {
 	display: inline-block;
 	margin-top: 1.5rem;
 	color: #fce205;
@@ -65,20 +65,36 @@ section {
 	outline: none;
 }
 
-.home-page .content .contact-link:hover {
+.home-page .content .contact-btn:hover {
 	color: #211722;
 	background-color: #f3f7f4;
+}
+
+.home-page-contact-link {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: baseline;
+}
+
+.home-page-contact-link a svg {
+	width: 50px;
+	height: 50px;
+	margin: 0 0.8rem 0 0;
+	padding: 0.5rem 0.1rem;
 }
 
 .project-page {
 	color: #798e9d;
 	background-color: #f3f7f4;
+	text-align: center;
 }
 
 .project-page .heading {
 	font-size: 3rem;
 	color: #b63b4f;
-	margin: 1rem 0.8rem;
+	margin: 1rem 0;
 }
 
 .project-card {
@@ -210,7 +226,7 @@ section {
 .about-disp {
 	font-size: 1.15rem;
 	line-height: 1.5rem;
-	margin: 0.1rem auto;
+	margin: 0.8rem auto;
 	width: 80%;
 	max-width: 750px;
 }
@@ -255,4 +271,64 @@ section {
 	margin-top: 0.4rem;
 	text-decoration: none;
 	list-style: none;
+}
+
+.contact-page {
+	width: 100%;
+	background-color: #211722;
+	color: #fce205;
+	text-align: center;
+}
+
+.contact-heading {
+	font-size: 4rem;
+	margin: 1rem 0;
+}
+
+.contact-card {
+	width: 90%;
+	margin: 2rem auto 1rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	padding: 0.2rem 0.4rem;
+}
+
+.contact-form input,
+textarea {
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	padding: 0.8rem 1rem;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+
+.contact-form textarea {
+	resize: none;
+}
+
+.contact-form input[type='submit'] {
+	color: #fce205;
+	background-color: #211722;
+	border: 3px solid #b63b4f;
+}
+
+.contact-link {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+.contact-link a svg {
+	width: 50px;
+	height: 50px;
 }
