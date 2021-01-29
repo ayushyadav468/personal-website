@@ -48,8 +48,13 @@ section {
 }
 
 .home-page .content .name {
-	color: #fce205;
-	font-size: 3rem;
+	display: inline-block;
+	padding: 0;
+}
+
+.home-page .content .name svg {
+	width: 20rem;
+	height: 100px;
 }
 
 .home-page .content .para {
@@ -69,8 +74,8 @@ section {
 }
 
 .home-page .content .contact-btn:hover {
-	color: #211722;
-	background-color: #f3f7f4;
+	background-color: #b63b4f;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .home-page-contact-link {
@@ -100,18 +105,9 @@ section {
 		font-size: 5rem;
 		line-height: 5.2rem;
 	}
-	.home-page .content .name {
-		font-size: 5rem;
-		margin-top: 1rem;
-	}
 	.home-page .content .para {
 		font-size: 2rem;
 		margin-top: 1.6rem;
-	}
-	.home-page .content .contact-btn {
-		margin-top: 2.5rem;
-		font-size: 2.5rem;
-		padding: 5px 25px;
 	}
 	.home-page-contact-link {
 		margin-top: 2rem;
@@ -144,18 +140,9 @@ section {
 		font-size: 4rem;
 		line-height: 4.4rem;
 	}
-	.home-page .content .name {
-		font-size: 4rem;
-		margin-top: 0.8rem;
-	}
 	.home-page .content .para {
 		font-size: 1.6rem;
 		margin-top: 1.4rem;
-	}
-	.home-page .content .contact-btn {
-		margin-top: 1.8rem;
-		font-size: 2rem;
-		padding: 5px 25px;
 	}
 	.home-page-contact-link {
 		margin-top: 2rem;
@@ -195,20 +182,11 @@ section {
 	}
 	.home-page .content h2 {
 		font-size: 5rem;
-		line-height: 5.2rem;
-	}
-	.home-page .content .name {
-		font-size: 5rem;
-		margin-top: 1rem;
+		line-height: 5.4rem;
 	}
 	.home-page .content .para {
 		font-size: 2rem;
-		margin-top: 1.6rem;
-	}
-	.home-page .content .contact-btn {
-		margin-top: 2.5rem;
-		font-size: 2.5rem;
-		padding: 5px 25px;
+		margin-top: 1.4rem;
 	}
 	.home-page-contact-link {
 		margin-top: 2rem;
@@ -368,6 +346,9 @@ section {
 		font-size: 4rem;
 		margin: 2rem 0;
 	}
+	.project-card-container {
+		margin-bottom: 2rem;
+	}
 	.project-card {
 		margin: 0;
 	}
@@ -492,6 +473,7 @@ section {
 @media screen and (min-width: 1081px) {
 	.about-heading {
 		font-size: 4rem;
+		padding: 3rem 0;
 	}
 	.about-disp {
 		font-size: 1.6rem;
@@ -592,17 +574,24 @@ textarea {
 	.contact-card {
 		width: 80%;
 		flex-direction: row;
+		justify-content: space-between;
 	}
 	.contact-form {
-		width: 70%;
-		max-width: 800px;
-	}
-	.contact-link {
-		margin-top: 1rem;
-		flex-direction: column;
+		width: 80%;
+		max-width: 900px;
+		margin: 0;
 	}
 	.contact-form input[type='submit'] {
 		width: 40%;
 		margin-left: auto;
+	}
+	.contact-link {
+		width: 8%;
+		margin: 1rem 0 0 3rem;
+		flex-direction: column;
+	}
+	.contact-link a svg {
+		width: 65px;
+		height: 65px;
 	}
 }
