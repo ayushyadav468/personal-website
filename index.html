@@ -18,6 +18,34 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./public/style.css" />
+		<link rel="shortcut icon" href="./src/favicon/favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./src/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./src/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./src/favicon/favicon-32x32.png"
+		/>
+		<meta
+			name="msapplication-TileImage"
+			content="./src/favicon/mstile-150x150.png"
+		/>
+		<link rel="mask-icon" href="./src/favicon/safari-pinned-tab.svg" />
+		<meta
+			name="msapplication-config"
+			content="./src/favicon/browserconfig.xml"
+		/>
+		<link rel="manifest" href="./src/favicon/site.webmanifest" />
 		<title>Ayush Yadav</title>
 	</head>
 	<body>
@@ -867,6 +895,13 @@
 				</div>
 			</div>
 		</section>
-		<script src="./public/script.js"></script>
+		<script type="text/javascript" src="./public/tilt.js"></script>
+		<script>
+			VanillaTilt.init(document.querySelectorAll('.project-card'), {
+				max: 25,
+				speed: 400,
+			});
+		</script>
+		<script type="text/javascript" src="./public/script.js"></script>
 	</body>
 </html>
