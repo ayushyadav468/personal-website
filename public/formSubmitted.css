@@ -32,7 +32,10 @@ a {
 	margin-top: 0.5rem;
 }
 
-.sucess,
+.sucess {
+	display: none;
+}
+
 .failed {
 	display: none;
 }
