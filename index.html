@@ -898,10 +898,12 @@
 		</section>
 		<script type="text/javascript" src="./public/tilt.js"></script>
 		<script>
-			VanillaTilt.init(document.querySelectorAll('.project-card'), {
-				max: 25,
-				speed: 400,
-			});
+			if (screen.width > 786) {
+				VanillaTilt.init(document.querySelectorAll('.project-card'), {
+					max: 25,
+					speed: 400,
+				});
+			}
 		</script>
 		<script type="text/javascript" src="./public/script.js"></script>
 	</body>

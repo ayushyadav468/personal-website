@@ -38,18 +38,13 @@ section {
 }
 
 .home-page .content {
-	margin: 10rem 0 0 2.5rem;
+	margin: 7rem 0 0 2rem;
 }
 
 .home-page .content h2 {
 	font-weight: lighter;
 	font-size: 3.5rem;
 	line-height: 4.4rem;
-}
-
-.home-page .content .name {
-	display: inline-block;
-	padding: 0;
 }
 
 .home-page .content .para {
@@ -68,7 +63,7 @@ section {
 	outline: none;
 }
 
-.home-page .content .contact-btn:hover {
+.home-page .content .contact-btn:hover:active {
 	background-color: #b63b4f;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -92,9 +87,13 @@ section {
 	display: none;
 }
 
+.home-page .content .name {
+	width: 16.5rem;
+}
+
 .home-page .content .name svg {
-	width: 21rem;
-	height: 100px;
+	width: 17rem;
+	height: 80px;
 	/* animation: fillWord 0.5s ease forwards 2s infinite; */
 }
 
@@ -138,11 +137,16 @@ section {
 	}
 	.home-page .content h2 {
 		font-size: 5rem;
-		line-height: 5.2rem;
+		line-height: 5.4rem;
+	}
+	.home-page .content .name svg {
+		width: 21rem;
+		height: 100px;
+		margin-top: 1rem;
 	}
 	.home-page .content .para {
 		font-size: 2rem;
-		margin-top: 1.6rem;
+		margin-top: 1.4rem;
 	}
 	.home-page-contact-link {
 		margin-top: 2rem;
@@ -174,6 +178,11 @@ section {
 	.home-page .content h2 {
 		font-size: 4rem;
 		line-height: 4.4rem;
+	}
+	.home-page .content .name svg {
+		width: 21rem;
+		height: 100px;
+		margin-top: 1rem;
 	}
 	.home-page .content .para {
 		font-size: 1.6rem;
@@ -218,6 +227,11 @@ section {
 	.home-page .content h2 {
 		font-size: 5rem;
 		line-height: 5.4rem;
+	}
+	.home-page .content .name svg {
+		width: 21rem;
+		height: 100px;
+		margin-top: 1.2rem;
 	}
 	.home-page .content .para {
 		font-size: 2rem;
