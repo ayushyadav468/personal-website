@@ -1,0 +1,21 @@
+{
+	"name": "personal-website",
+	"version": "2.0.0",
+	"description": "This my personal website.",
+	"main": "index.js",
+	"scripts": {
+		"build:css": "tailwind build src/style.css -o public/style.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ayushyadav468/personal-website.git"
+	},
+	"keywords": [],
+	"author": "Ayush Yadav",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ayushyadav468/personal-website/issues"
+	},
+	"homepage": "https://github.com/ayushyadav468/personal-website#readme",
+	"dependencies": {}
+}
