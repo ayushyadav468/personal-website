@@ -3,17 +3,16 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {}
 @media screen and (min-width: 769px) and (max-width: 1080px) {}
 @media screen and (min-width: 1081px) {} */
-/* Color
-dark: '#211722',
-red: '#B63B4F',
-yellow: '#FCE205',
-gray: '#798E9D',
-light: '#F3F7F4', */
+/* Color */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,39 +35,78 @@ section {
   color: #f3f7f4;
 }
 
-.home-page .content {
+.content {
   margin: 7rem 0 0 2rem;
 }
 
-.home-page .content h2 {
+.content h2 {
   font-weight: lighter;
   font-size: 3.5rem;
   line-height: 4.4rem;
 }
 
-.home-page .content .para {
+.content .name {
+  width: 16.5rem;
+}
+
+.content .name svg {
+  width: 17rem;
+  height: 80px;
+  /* animation: fillWord 0.5s ease forwards 2s infinite; */
+  /* SVG Animation */
+}
+
+.content .name svg path:nth-child(1) {
+  stroke-dasharray: 395.8665771484375px;
+  stroke-dashoffset: 395.8665771484375px;
+  -webkit-animation: lineAnimation 2s ease forwards 1s infinite;
+          animation: lineAnimation 2s ease forwards 1s infinite;
+}
+
+.content .name svg path:nth-child(3) {
+  stroke-dasharray: 341.73583984375px;
+  stroke-dashoffset: 341.73583984375px;
+  -webkit-animation: lineAnimation 2s ease forwards 1s infinite;
+          animation: lineAnimation 2s ease forwards 1s infinite;
+}
+
+.content .name svg path:nth-child(4) {
+  stroke-dasharray: 395.56719970703125px;
+  stroke-dashoffset: 395.56719970703125px;
+  -webkit-animation: lineAnimation 2s ease forwards 1s infinite;
+          animation: lineAnimation 2s ease forwards 1s infinite;
+}
+
+.content .para {
   font-size: 1.2rem;
   margin-top: 0.6rem;
 }
 
-.home-page .content .contact-btn {
+.content .home-page-contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.content .home-page-contact-btn .contact-btn {
   display: inline-block;
   margin-top: 1.5rem;
   color: #fce205;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 5px 20px;
   border: 2px solid #b63b4f;
   border-radius: 30px;
   outline: none;
 }
 
-.home-page .content .contact-btn:hover:active {
+.content .home-page-contact-btn .contact-btn:hover, .content .home-page-contact-btn .contact-btn:active {
   background-color: #b63b4f;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.home-page-contact-link {
+.content .home-page-contact-link {
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +123,7 @@ section {
           align-items: baseline;
 }
 
-.home-page-contact-link a svg {
+.content .home-page-contact-link a svg {
   width: 50px;
   height: 50px;
   margin: 0 0.8rem 0 0;
@@ -94,38 +132,6 @@ section {
 
 .home-page-icon {
   display: none;
-}
-
-.home-page .content .name {
-  width: 16.5rem;
-}
-
-.home-page .content .name svg {
-  width: 17rem;
-  height: 80px;
-  /* animation: fillWord 0.5s ease forwards 2s infinite; */
-}
-
-/* SVG Animation */
-.home-page .content .name svg path:nth-child(1) {
-  stroke-dasharray: 395.8665771484375px;
-  stroke-dashoffset: 395.8665771484375px;
-  -webkit-animation: lineAnimation 2s ease forwards 1s infinite;
-          animation: lineAnimation 2s ease forwards 1s infinite;
-}
-
-.home-page .content .name svg path:nth-child(3) {
-  stroke-dasharray: 341.73583984375px;
-  stroke-dashoffset: 341.73583984375px;
-  -webkit-animation: lineAnimation 2s ease forwards 1s infinite;
-          animation: lineAnimation 2s ease forwards 1s infinite;
-}
-
-.home-page .content .name svg path:nth-child(4) {
-  stroke-dasharray: 395.56719970703125px;
-  stroke-dashoffset: 395.56719970703125px;
-  -webkit-animation: lineAnimation 2s ease forwards 1s infinite;
-          animation: lineAnimation 2s ease forwards 1s infinite;
 }
 
 @-webkit-keyframes lineAnimation {
@@ -145,38 +151,38 @@ section {
 		fill: transparent;
 	}
 	to {
-		fill: #fce205;
+		fill: $color-yellow;
 	}
 } */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .home-page .content {
+  .content {
     margin: 14rem 0 0 10rem;
   }
-  .home-page .content h2 {
+  .content h2 {
     font-size: 5rem;
     line-height: 5.4rem;
   }
-  .home-page .content .name svg {
+  .content .name svg {
     width: 21rem;
     height: 100px;
     margin-top: 1rem;
   }
-  .home-page .content .para {
+  .content .para {
     font-size: 2rem;
     margin-top: 1.4rem;
   }
-  .home-page-contact-link {
+  .content .home-page-contact-link {
     margin-top: 2rem;
   }
-  .home-page-contact-link a svg {
-    width: 70px;
-    height: 70px;
+  .content .home-page-contact-link a svg {
+    width: 30px;
+    height: 30px;
     margin: 0 1.2rem 0 0;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1080px) {
-  .home-page .content {
+  .content {
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -187,7 +193,7 @@ section {
     -ms-grid-rows: 2rem auto auto;
         grid-template-rows: 2rem auto auto;
   }
-  .home-page .content .intro {
+  .content .intro {
     -ms-grid-column: 2;
         grid-column-start: 2;
     -ms-grid-row: 2;
@@ -206,25 +212,25 @@ section {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .home-page .content h2 {
+  .content .intro h2 {
     font-size: 4rem;
     line-height: 4.4rem;
   }
-  .home-page .content .name svg {
+  .content .intro .name svg {
     width: 21rem;
     height: 100px;
     margin-top: 1rem;
   }
-  .home-page .content .para {
+  .content .intro .para {
     font-size: 1.6rem;
     margin-top: 1.4rem;
   }
-  .home-page-contact-link {
+  .content .intro .home-page-contact-link {
     margin-top: 2rem;
   }
-  .home-page-contact-link a svg {
-    width: 55px;
-    height: 55px;
+  .content .intro .home-page-contact-link a svg {
+    width: 50px;
+    height: 50px;
     margin: 0 1.2rem 0 0;
   }
   .home-page-icon {
@@ -244,7 +250,7 @@ section {
 }
 
 @media screen and (min-width: 1081px) {
-  .home-page .content {
+  .content {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -255,7 +261,7 @@ section {
     -ms-grid-rows: 5rem auto 5rem;
         grid-template-rows: 5rem auto 5rem;
   }
-  .home-page .content .intro {
+  .content .intro {
     -ms-grid-column: 2;
         grid-column-start: 2;
     -ms-grid-row: 2;
@@ -274,23 +280,23 @@ section {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .home-page .content h2 {
+  .content .intro h2 {
     font-size: 5rem;
     line-height: 5.4rem;
   }
-  .home-page .content .name svg {
+  .content .intro .name svg {
     width: 21rem;
     height: 100px;
     margin-top: 1.2rem;
   }
-  .home-page .content .para {
+  .content .intro .para {
     font-size: 2rem;
     margin-top: 1.4rem;
   }
-  .home-page-contact-link {
+  .content .intro .home-page-contact-link {
     margin-top: 2rem;
   }
-  .home-page-contact-link a svg {
+  .content .intro .home-page-contact-link a svg {
     width: 70px;
     height: 70px;
     margin: 0 1.2rem 0 0;
@@ -348,23 +354,13 @@ section {
   margin-bottom: 1rem;
 }
 
-.Left {
-  margin-left: 1rem;
-  margin-right: 0;
-}
-
-.Right {
-  margin-left: auto;
-  margin-right: 1rem;
-}
-
-.project-card-front {
+.project-card .project-card-front {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.project-img {
+.project-card .project-card-front .project-img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
@@ -373,7 +369,7 @@ section {
   transition: 0.5s;
 }
 
-.project-card-back {
+.project-card .project-card-back {
   position: relative;
   top: 0;
   left: 0;
@@ -395,6 +391,35 @@ section {
   transition: 0.5s;
 }
 
+.project-card .project-card-back .project-card-title {
+  font-size: 2rem;
+}
+
+.project-card .project-card-back .project-card-disp {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.project-card .project-card-back .project-link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.project-card .project-card-back .project-link-container .project-card-link {
+  display: inline-block;
+  padding: 8px 25px;
+  color: #211722;
+  font-weight: 500;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
 .project-card:hover .project-img {
   opacity: 0.15;
 }
@@ -405,33 +430,14 @@ section {
   opacity: 1;
 }
 
-.project-card-back .project-card-title {
-  font-size: 2rem;
+.Left {
+  margin-left: 1rem;
+  margin-right: 0;
 }
 
-.project-card-back .project-card-disp {
-  font-size: 1rem;
-  font-style: italic;
-  margin-top: 1rem;
-}
-
-.project-card-back .project-link-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 1.5rem;
-}
-
-.project-card-back .project-link-container .project-card-link {
-  display: inline-block;
-  padding: 8px 25px;
-  color: #211722;
-  font-weight: 500;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+.Right {
+  margin-left: auto;
+  margin-right: 1rem;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -482,13 +488,13 @@ section {
   text-align: center;
 }
 
-.about-heading {
+.about-heading-container .about-heading {
   font-size: 3rem;
   color: #fce205;
   padding: 2rem 0;
 }
 
-.about-disp {
+.about-heading-container .about-disp {
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 1.5rem;
@@ -509,7 +515,7 @@ section {
   top: -7rem;
 }
 
-.about-card {
+.about-card-container .about-card {
   width: 80%;
   height: 400px;
   margin: 1rem auto;
@@ -530,22 +536,22 @@ section {
   text-align: center;
 }
 
-.card-icon {
+.about-card-container .about-card .card-icon {
   margin: 1.1rem auto;
 }
 
-.card-heading {
+.about-card-container .about-card .card-heading {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
 }
 
-.card-subheading {
+.about-card-container .about-card .card-subheading {
   font-size: 1.15rem;
   font-weight: normal;
 }
 
-.card-list {
+.about-card-container .about-card .card-list {
   font-size: 1.1rem;
   margin-top: 0.4rem;
   text-decoration: none;
@@ -570,7 +576,7 @@ section {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .about-card {
+  .about-card-container .about-card {
     width: 40%;
     margin: 1rem 0;
   }
@@ -595,7 +601,7 @@ section {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .about-card {
+  .about-card-container .about-card {
     width: 40%;
     margin: 1rem 0;
   }
@@ -630,7 +636,7 @@ section {
           justify-content: space-evenly;
 }
 
-.contact-form {
+.contact-card .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,8 +649,8 @@ section {
   padding: 0.2rem 0.4rem;
 }
 
-.contact-form input,
-textarea {
+.contact-card .contact-form input,
+.contact-card .contact-form textarea {
   font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
   font-size: 1.4rem;
@@ -654,23 +660,23 @@ textarea {
   outline: none;
 }
 
-.contact-form textarea {
+.contact-card .contact-form textarea {
   resize: none;
 }
 
-.contact-form input[type='submit'] {
+.contact-card .contact-form input[type='submit'] {
   color: #fce205;
   background-color: #211722;
   border: 3px solid #b63b4f;
 }
 
-.contact-form input[type='submit']:hover {
+.contact-card .contact-form input[type='submit']:hover {
   background-color: #b63b4f;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.contact-link {
+.contact-card .contact-link {
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,7 +693,7 @@ textarea {
           align-items: baseline;
 }
 
-.contact-link a svg {
+.contact-card .contact-link a svg {
   width: 50px;
   height: 50px;
 }
@@ -696,7 +702,7 @@ textarea {
   .contact-card {
     width: 70%;
   }
-  .contact-form input[type='submit'] {
+  .contact-card .contact-form input[type='submit'] {
     width: 40%;
     margin-left: auto;
   }
@@ -713,16 +719,16 @@ textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .contact-form {
+  .contact-card .contact-form {
     width: 80%;
     max-width: 900px;
     margin: 0;
   }
-  .contact-form input[type='submit'] {
+  .contact-card .contact-form input[type='submit'] {
     width: 30%;
     margin-left: auto;
   }
-  .contact-link {
+  .contact-card .contact-link {
     width: 8%;
     margin: 1rem 0 0 3rem;
     -webkit-box-orient: vertical;
@@ -730,7 +736,7 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contact-link a svg {
+  .contact-card .contact-link a svg {
     width: 65px;
     height: 65px;
   }
