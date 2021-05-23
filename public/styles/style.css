@@ -4,6 +4,7 @@
 @media screen and (min-width: 769px) and (max-width: 1080px) {}
 @media screen and (min-width: 1081px) {} */
 /* Color */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -616,12 +617,12 @@ section {
 }
 
 .contact-heading {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 1rem 0;
 }
 
 .contact-card {
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   margin: 2rem auto 1rem auto;
   display: -webkit-box;
@@ -640,7 +641,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -664,20 +665,46 @@ section {
   resize: none;
 }
 
-.contact-card .contact-form input[type='submit'] {
+.contact-card .contact-form .message-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-card .contact-form .message-container .message {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: auto;
+  font-size: 1.2rem;
+}
+
+.contact-card .contact-form .message-container .send-btn {
+  width: 35%;
+  margin-bottom: 0;
   color: #fce205;
   background-color: #211722;
   border: 3px solid #b63b4f;
 }
 
-.contact-card .contact-form input[type='submit']:hover {
+.contact-card .contact-form .message-container .send-btn:hover {
   background-color: #b63b4f;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .contact-card .contact-link {
-  margin-top: 1rem;
+  width: 95%;
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,13 +729,19 @@ section {
   .contact-card {
     width: 70%;
   }
-  .contact-card .contact-form input[type='submit'] {
+  .contact-card .contact-form .message-container .message {
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .contact-card .contact-form .message-container .send-btn {
     width: 40%;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1081px) {
+  .contact-heading {
+    font-size: 4rem;
+  }
   .contact-card {
     width: 80%;
     -webkit-box-orient: horizontal;
@@ -724,9 +757,8 @@ section {
     max-width: 900px;
     margin: 0;
   }
-  .contact-card .contact-form input[type='submit'] {
+  .contact-card .contact-form .message-container .send-btn {
     width: 30%;
-    margin-left: auto;
   }
   .contact-card .contact-link {
     width: 8%;

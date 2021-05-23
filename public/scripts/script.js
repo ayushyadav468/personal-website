@@ -2,18 +2,25 @@ const app = () => {
 	window.addEventListener('DOMContentLoaded', () => {
 		// get the form elements defined in your form HTML above
 		const form = document.querySelector('#contactForm');
+		const message = document.querySelector('.message');
 
 		// Success and Error functions for after the form is submitted
 		const success = () => {
 			form.reset();
-			window.location.pathname = 'formSubmitted.html';
-			document.querySelector('.sucess').style.display = 'block';
-			document.querySelector('.failed').style.display = 'none';
+			message.textContent = 'Message sent';
+			message.style.display = 'block';
+			message.style.color = '#fce205';
+			setTimeout(() => {
+				message.style.display = 'none';
+			}, 2000);
 		};
 		const error = () => {
-			window.location.pathname = 'formSubmitted.html';
-			document.querySelector('.sucess').style.display = 'none';
-			document.querySelector('.failed').style.display = 'block';
+			message.textContent = 'Something went wrong';
+			message.style.display = 'block';
+			message.style.color = '#b63b4f';
+			setTimeout(() => {
+				message.style.display = 'none';
+			}, 2000);
 		};
 
 		// handle the form submission event

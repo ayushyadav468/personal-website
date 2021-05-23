@@ -11,24 +11,21 @@ $color-yellow: #fce205;
 $color-gray: #798e9d;
 $color-light: #f3f7f4;
 
+/* Global Styles */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 html {
 	scroll-behavior: smooth;
 }
-
 body {
 	font-family: 'Playfair Display', serif;
 }
-
 a {
 	text-decoration: none;
 }
-
 section {
 	display: block;
 	overflow: hidden;
@@ -109,17 +106,14 @@ section {
 		}
 	}
 }
-
 .home-page-icon {
 	display: none;
 }
-
 @keyframes lineAnimation {
 	to {
 		stroke-dashoffset: 0;
 	}
 }
-
 /* @keyframes fillWord {
 	from {
 		fill: transparent;
@@ -128,7 +122,6 @@ section {
 		fill: $color-yellow;
 	}
 } */
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.content {
 		margin: 14rem 0 0 10rem;
@@ -155,7 +148,6 @@ section {
 		}
 	}
 }
-
 @media screen and (min-width: 769px) and (max-width: 1080px) {
 	.content {
 		height: 100vh;
@@ -204,7 +196,6 @@ section {
 		margin-bottom: 1rem;
 	}
 }
-
 @media screen and (min-width: 1081px) {
 	.content {
 		height: 100%;
@@ -264,7 +255,6 @@ section {
 		margin: 1rem 0;
 	}
 }
-
 .project-card {
 	width: 90%;
 	max-width: 500px;
@@ -342,21 +332,18 @@ section {
 	margin-left: auto;
 	margin-right: 1rem;
 }
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.project-page .heading {
 		font-size: 4rem;
 		margin: 2rem 0;
 	}
 }
-
 @media screen and (min-width: 769px) and (max-width: 1080px) {
 	.project-page .heading {
 		font-size: 4rem;
 		margin: 2rem 0;
 	}
 }
-
 @media screen and (min-width: 1081px) {
 	.project-page .heading {
 		font-size: 4rem;
@@ -382,7 +369,6 @@ section {
 	color: $color-dark;
 	background-color: $color-light;
 }
-
 .about-heading-container {
 	width: 100%;
 	height: 60vh;
@@ -403,7 +389,6 @@ section {
 		max-width: 750px;
 	}
 }
-
 .about-card-container {
 	display: flex;
 	flex-direction: column;
@@ -441,7 +426,6 @@ section {
 		}
 	}
 }
-
 @media screen and (min-width: 769px) and (max-width: 1080px) {
 	.about-heading {
 		font-size: 4rem;
@@ -461,7 +445,6 @@ section {
 		}
 	}
 }
-
 @media screen and (min-width: 1081px) {
 	.about-heading {
 		font-size: 4rem;
@@ -490,14 +473,12 @@ section {
 	color: $color-yellow;
 	text-align: center;
 }
-
 .contact-heading {
-	font-size: 4rem;
+	font-size: 3rem;
 	margin: 1rem 0;
 }
-
 .contact-card {
-	width: 90%;
+	width: 100%;
 	max-width: 900px;
 	margin: 2rem auto 1rem auto;
 	display: flex;
@@ -505,7 +486,7 @@ section {
 	justify-content: space-evenly;
 	.contact-form {
 		display: flex;
-		width: 90%;
+		width: 95%;
 		margin: auto;
 		flex-direction: column;
 		padding: 0.2rem 0.4rem;
@@ -522,18 +503,33 @@ section {
 		textarea {
 			resize: none;
 		}
-		input[type='submit'] {
-			color: $color-yellow;
-			background-color: #211722;
-			border: 3px solid $color-red;
-			&:hover {
-				background-color: $color-red;
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+		.message-container {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			.message {
+				align-self: center;
+				margin-right: auto;
+				font-size: 1.2rem;
+			}
+			.send-btn {
+				width: 35%;
+				margin-bottom: 0;
+				color: $color-yellow;
+				background-color: #211722;
+				border: 3px solid $color-red;
+				&:hover {
+					background-color: $color-red;
+					box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+				}
 			}
 		}
 	}
 	.contact-link {
-		margin-top: 1rem;
+		width: 95%;
+		margin-top: 1.4rem;
+		margin-bottom: 1rem;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -544,18 +540,26 @@ section {
 		}
 	}
 }
-
 @media screen and (min-width: 769px) and (max-width: 1080px) {
 	.contact-card {
 		width: 70%;
-		.contact-form input[type='submit'] {
-			width: 40%;
-			margin-left: auto;
+		.contact-form {
+			.message-container {
+				.message {
+					margin-left: 0.5rem;
+					font-size: 1.4rem;
+				}
+				.send-btn {
+					width: 40%;
+				}
+			}
 		}
 	}
 }
-
 @media screen and (min-width: 1081px) {
+	.contact-heading {
+		font-size: 4rem;
+	}
 	.contact-card {
 		width: 80%;
 		flex-direction: row;
@@ -564,9 +568,10 @@ section {
 			width: 80%;
 			max-width: 900px;
 			margin: 0;
-			input[type='submit'] {
-				width: 30%;
-				margin-left: auto;
+			.message-container {
+				.send-btn {
+					width: 30%;
+				}
 			}
 		}
 		.contact-link {
