@@ -682,7 +682,7 @@ const Contact = () => {
     if (isCopied) return;
 
     setIsCopied(true);
-    copyToClipboard('ayushyadav468@gmail.com');
+    copyToClipboard('contact@ayushy.dev');
 
     setTimeout(() => {
       setIsCopied(false)
@@ -702,7 +702,7 @@ const Contact = () => {
             <button className="mt-2 w-min py-1 px-2 flex items-center gap-2 border border-input-dark rounded-md relative"
               onClick={copyToClipboardHandler}
             >
-              <p className="text-gray-dark text-sm">ayushyadav468@gmail.com</p>
+              <p className="text-gray-dark text-sm">contact@ayushy.dev</p>
               <span>
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.17401 14H2.41299C1.08243 14 0 13.0187 0 11.8125V4.40235C0 3.19612 1.08243 2.21484 2.41299 2.21484H8.17401C9.50456 2.21484 10.587 3.19612 10.587 4.40235V11.8125C10.587 13.0187 9.50456 14 8.17401 14ZM2.41299 3.30859C1.74777 3.30859 1.2065 3.79929 1.2065 4.40235V11.8125C1.2065 12.4156 1.74777 12.9063 2.41299 12.9063H8.17401C8.83922 12.9063 9.38054 12.4156 9.38054 11.8125V4.40235C9.38054 3.79929 8.83922 3.30859 8.17401 3.30859H2.41299ZM13 10.4453V2.1875C13 0.981276 11.9176 0 10.587 0H3.89095C3.55775 0 3.2877 0.244813 3.2877 0.546877C3.2877 0.848935 3.55775 1.09375 3.89095 1.09375H10.587C11.2522 1.09375 11.7935 1.58444 11.7935 2.1875V10.4453C11.7935 10.7474 12.0635 10.9922 12.3967 10.9922C12.7299 10.9922 13 10.7474 13 10.4453Z" fill="#7E7E7E" />
@@ -714,7 +714,7 @@ const Contact = () => {
           <div className="mt-6">
             <p className="text-base text-text font-bold">Contact me via social</p>
             <div className="mt-2 flex items-center gap-2">
-              <Link href='mailto:ayushyadav468@gmail.com' className="group-hover" title="Mail at ayushyadav468@gmail">
+              <Link href='mailto:contact@ayushy.dev' className="group-hover" title="Mail at ayushyadav468@gmail">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.0645 18.3609C18.8964 18.4789 18.6982 18.5379 18.5 18.5379C18.3017 18.5379 18.1036 18.4789 17.9355 18.3609L9.90909 12.7201L8.00006 11.3785L8 24.3315C8.00006 24.8367 8.42738 25.2463 8.95454 25.2463L28.0455 25.2462C28.5727 25.2462 29 24.8366 29 24.3315V11.3784L27.0909 12.7201L19.0645 18.3609Z" fill="#7E7E7E" />
                   <path d="M18.4986 16.4888L27.7313 10.0001L9.26562 10L18.4986 16.4888Z" fill="#7E7E7E" />
