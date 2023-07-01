@@ -25,8 +25,7 @@ const PROJECT_CARD_DATA: ProjectData[] = [
 	},
 	{
 		id: 2,
-		imageUrl:
-			'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8',
+		imageUrl: '/hulu-clone_big-image.png',
 		type: 'website',
 		heading: 'Hulu Clone',
 		description:
@@ -50,7 +49,7 @@ const ProjectCard = ({ data }: { data: ProjectData }) => {
 					loading='lazy'
 					className={`min-w-full md:relative md:top-[15%] ${
 						data.id % 2 === 0 ? 'md:right-[5%]' : 'md:left-[5%]'
-					} md:z-10 rounded md:rounded-md md:shadow-md md:scale-110`}
+					} md:z-10 rounded md:rounded-md md:shadow-md md:scale-110 md:aspect-[1067/710]`}
 				/>
 			</div>
 			<div
